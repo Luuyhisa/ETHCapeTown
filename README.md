@@ -13,10 +13,10 @@ Use Case: Set the contract flow (who & percentage)
 “As a blockchain owner I want to set my beneficiaries and the percentage of each must get”
 
 Tools:
->Zeppkit
->One Click
->Truffle
->Gasashe
->Remix
->HTML
->JavaScript
+-Zeppkit
+-One Click
+-Truffle
+-Gasashe
+-Remix
+-HTML
+-JavaScript
