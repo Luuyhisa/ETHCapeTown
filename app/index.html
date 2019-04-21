@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>the Heir</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+  <script >
+        function myFunction() {
+    var varName = document.getElementById("txtName");
+   // alert(varName.value);
+    var varAdd = document.getElementById("txtAdd");
+  //  alert(varAdd.value);
+    var varShare = document.getElementById("txtShare");
+  //  alert(varShare.value);
+    document.getElementById('TextArea1').value ="Name :" +varName.value + " -    Address :" + varAdd.value + " -  Share amount :" + varShare.value;
+}
+
+
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+
+    </script>
+
+</head>
+<body>  
+  <h1>the Heir</h1>
+  <br><label for="txtName">Name</label><input type="text" id="txtName" placeholder="e.g., Maria"></input>
+  <br><label for="txtAdd">Address</label><input type="text" id="txtAdd" placeholder="e.g., 0x93e66d9baea28c17d9fc393b53e3fbdd76899dae"></input>  
+  <br><label for="txtShare">Share</label><input type="text" id="txtShare" placeholder="e.g., 50"></input>
+<br><br>
+<label for="productPrice">Funds to send (in Wei):</label><input type="text" id="productPrice" placeholder="e.g., 100"></input> 
+
+  <br><br><button id="buyProduct" onclick="App.hashIt()">ETH_THE_HEIR</button>
+  <br><br><button id="captureid" onclick="myFunction()">Capture</button>
+  <br><br>
+  <textarea id="TextArea1" name="S1" disabled="disabled" style="background-color: #808080; font-family: 'Arial Black'; color: #FF0000;"></textarea>
+  <br><br><span id="hashStatus"></span>
+  <br>
+</body>
+</html>

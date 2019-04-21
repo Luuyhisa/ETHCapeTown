@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>the Heir</title>
+    <script src="./app.js"></script>
+    <script >
+        function myFunction() {
+    var varName = document.getElementById("txtName");
+   // alert(varName.value);
+    var varAdd = document.getElementById("txtAdd");
+  //  alert(varAdd.value);
+    var varShare = document.getElementById("txtShare");
+  //  alert(varShare.value);
+    document.getElementById('TextArea1').value ="Name :" +varName.value + " -    Address :" + varAdd.value + " -  Share amount :" + varShare.value;
+}
+
+
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+
+    </script>
+    
+    <style type="text/css">
+        #TextArea1 {
+            z-index: 1;
+            left: 39px;
+            top: 342px;
+            position: absolute;
+            height: 110px;
+            width: 362px;
+        }
+        #btnSpliter {
+            z-index: 1;
+            left: 422px;
+            top: 398px;
+            position: absolute;
+            height: 49px;
+        }
+    </style>
+    
+</head>
+<body style="height: 517px; width: 700px; z-index: 1; left: 0px; top: 0px; position: absolute;">
+    <p>
+        &nbsp;</p>
+    <p aria-sort="none" style="width: 276px; z-index: 1; left: 219px; top: 177px; position: absolute; height: 26px">
+        Name
+        <input id="txtName" type="text" />&nbsp;&nbsp;
+    </p>
+    <p style="width: 500px; z-index: 1; left: 213px; top: 216px; position: absolute; height: 40px">
+        Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :&nbsp;&nbsp;&nbsp;&nbsp;
+        <input id="txtAdd" type="text" /></p>
+    <p style="z-index: 1; left: 219px; top: 264px; position: absolute; height: 40px; width: 292px">
+        Share&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :&nbsp;&nbsp;&nbsp;&nbsp; 
+        <input id="txtShare" type="text" /></p>
+    <p style="z-index: 1; left: 45px; top: 150px; position: absolute; height: 19px; width: 167px">
+        THE BENEFICIARY</p>
+    <p style="font-family: 'Cooper Black'; font-size: 46px; color: #000099; text-decoration: underline; width: 398px; z-index: 1; left: 168px; top: 20px; position: absolute; height: 53px;">
+        ETH_THE_HEIR</p>
+    <button onclick="myFunction()" style="z-index: 1; left: 419px; top: 343px; position: absolute; height: 31px; width: 93px">Capture</button>
+     <p>
+        <input id="hashIt" type="button" value="Add Spliter" onclick="App.hashIt()"/></p>
+    <p>
+    <p>
+        <label for="productPrice">Funds to send (in Wei):</label><input type="text" id="productPrice" placeholder="e.g., 100"></input> 
+    </p>
+        &nbsp;</p>
+    <p>
+        <textarea id="TextArea1" name="S1" disabled="disabled" style="background-color: #808080; font-family: 'Arial Black'; color: #FF0000;"></textarea></p>
+    <span id="hashStatus"></span>        
+
+</body>
+    
+</html>
