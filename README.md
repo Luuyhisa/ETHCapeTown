@@ -1,6 +1,8 @@
 # ETHCapeTown
 ETH_THE_HEIR - This blockchain will be allowing the beneficiaries to get the portion of coins from the owner when no longer in the living world
 
+![](TheHeir.gif)
+[Youtube video](https://www.youtube.com/watch?v=QGGGlIWx0ME&feature=youtu.be)
 Protocol: ETH_THE_HEIR
 
 Aim:
@@ -13,10 +15,10 @@ Use Case: Set the contract flow (who & percentage)
 “As a blockchain owner I want to set my beneficiaries and the percentage of each must get”
 
 Tools:
->Zeppkit
->One Click
->Truffle
->Gasashe
->Remix
->HTML
->JavaScript
+-Zeppkit
+-One Click
+-Truffle
+-Gasashe
+-Remix
+-HTML
+-JavaScript
